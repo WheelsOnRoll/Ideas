@@ -4,7 +4,7 @@ Following tasks are expected by applicant:
 
 + **Level 0 : HTML**
 
-Create a HTML page using HTML ONLY. Contents of the file can be found in `Contents.txt`. The file must comprise only of HTML. No JavaScript or CSS(including inline `style` attribute) to be used. It must only contain HTML tags and attributes. Preference will be given to better looks and layout.
+Create a HTML page using HTML ONLY. Contents of the file can be found in `Content.txt`. The file must comprise only of HTML. No JavaScript or CSS(including inline `style` attribute) to be used. It must only contain HTML tags and attributes. Preference will be given to better looks and layout.
 
 + **Level 1 : CSS**
 
