@@ -1,0 +1,6 @@
+The following changes were made apart from adding meta tags to the head.
+
+- Enclose the title in h1 tags. This was done since search engines try to match the heading tags with the 
+search query, so including the title in a h1 tag improves the search engine visibility of the site.
+
+- Add alt attribute to images. Makes the content more accessible to search engine crawlers
