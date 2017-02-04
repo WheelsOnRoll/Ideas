@@ -1,0 +1,102 @@
+.carousel {
+	position: relative;
+	width: 95%;
+    max-width: 700px;
+    padding: 2%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.carousel-container {
+	background: #476723;
+}
+
+.carousel-list {
+    white-space: nowrap;
+
+    padding: 0;
+    margin: 0;
+    transition: transform .3s;
+}
+
+.carousel-list li {
+    white-space: normal;
+    display: inline-block;
+    border: none;
+	margin-left: -0px;
+	margin-right: -5px;
+    width: 100%;
+}
+
+.carousel-list img {
+    width: 100%; 
+    vertical-align: middle;
+	z-index: 0;
+}
+
+input {
+	display: none;
+}
+
+input:nth-child(1):checked ~ ul {
+    transform: translateX(0);
+}
+
+input:nth-child(2):checked ~ ul {
+    transform: translateX(-100%);
+}
+
+input:nth-child(3):checked ~ ul {
+    transform: translateX(-200%);
+}
+
+input:nth-child(4):checked ~ ul {
+    transform: translateX(-300%);
+}
+
+input:nth-child(5):checked ~ ul {
+    transform: translateX(-400%);
+}
+
+.carousel-list li {
+    opacity: 0;
+    transition: all 1s;
+}
+
+input:nth-child(1):checked ~ ul li:nth-child(1),
+input:nth-child(2):checked ~ ul li:nth-child(2),
+input:nth-child(3):checked ~ ul li:nth-child(3),
+input:nth-child(4):checked ~ ul li:nth-child(4),
+input:nth-child(5):checked ~ ul li:nth-child(5) {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.carousel button {
+	background-color: #000099;
+	border: none;
+	border-radius: 3px;
+	color: #ffffff;
+}
+
+#arrow-left {
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	height: 14%;
+	-webkit-transform: translate(50%,-50%);
+        -ms-transform: translate(50%,-50%);
+         -o-transform: translate(50%,-50%);
+            transform: translate(50%,-50%);
+}
+
+#arrow-right {
+	position: absolute;
+	top: 50%;
+	right: 7%;
+	height: 14%;
+	-webkit-transform: translate(50%,-50%);
+        -ms-transform: translate(50%,-50%);
+         -o-transform: translate(50%,-50%);
+            transform: translate(50%,-50%);
+}
